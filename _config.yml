@@ -1,0 +1,22 @@
+# Site
+title: JoshAdamBoyd
+email: joshadamboyd@me.com
+description: This is the default description of the site.
+
+# URLs and paths
+baseurl: ""
+url: http://joshadamboyd.com
+
+# Social networks
+twitter_username: joshadamboyd
+github_username:  joshadamboyd
+
+# Encoding
+encoding: utf-8
+
+# Exclude in build
+exclude:
+  - README.md
+
+# Markdown
+markdown: kramdown
