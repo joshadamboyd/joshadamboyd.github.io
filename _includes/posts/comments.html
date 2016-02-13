@@ -1,0 +1,8 @@
+{% if site.comments.provider %}
+  {% case site.comments.provider %}
+  {% when "disqus" %}
+    {% include posts/comments/disqus.html %}
+  {% when "facebook" %}
+    {% include posts/comments/facebook.html %}
+  {% endcase %}
+{% endif %}

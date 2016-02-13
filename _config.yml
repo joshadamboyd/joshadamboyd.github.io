@@ -1,0 +1,85 @@
+# Site
+title: JoshAdamBoyd # Name of your site
+email: noreply@example.com # Your email address
+description: This is the description of my website. # Default description of your site
+keywords: # Site keywords
+  - awesome
+  - keywords
+  - are
+  - awesome
+
+# URLs and paths
+baseurl: "" # Base path of your site. Useful when your Jekyll site is at /blog
+url: http://joshadamboyd.com # Base URL of your site
+
+# Social networks
+social: # Social media usernames
+  twitter: joshadamboyd
+  facebook:
+  instagram: joshadamboyd
+  github: joshadamboyd
+  linkedin: joshua-boyd-92ab3aa
+
+# Disqus comments
+comments:
+  provider: disqus # Comments provider. Only one can be used
+  disqus:
+    short_name:
+  facebook:
+    app_id:
+    num_posts: 5
+    width: 100%
+    colorscheme: light
+
+# Analytics
+analytics: # Site analytics. Multiple can be used at the same time
+  google:
+    tracking_id:
+  mixpanel:
+    token:
+
+# Site verification
+verification: # Site verification
+  google:
+  msvalidate:
+
+# Pagination
+paginate: 12 # Number of posts to display per page
+permalink: /:year/:month/:day/:title/ # Post URL format
+paginate_path: /page/:num # Post pagination URL format
+
+# Timezone
+timezone: America/Chicago # Your timezone
+
+# Default layouts
+defaults:
+  -
+    scope:
+      type: posts
+    values:
+      type: post
+      layout: post
+      comments: true
+  -
+    scope:
+      type: pages
+    values:
+      type: page
+      layout: page
+
+# CSS compression
+sass:
+  style: :compressed
+
+# Plugins
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-coffeescript
+
+# Exclude in build
+exclude:
+  - README.md
+
+# Highlighter
+highlighter: pygments
