@@ -51,6 +51,10 @@ paginate_path: /page/:num # Post pagination URL format
 # Timezone
 timezone: America/Chicago # Your timezone
 
+# Collections
+collections:
+  - portfolio
+
 # Default layouts
 defaults:
   -
