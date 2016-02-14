@@ -34,7 +34,7 @@ comments:
 # Analytics
 analytics: # Site analytics. Multiple can be used at the same time
   google:
-    tracking_id:
+    tracking_id: UA-5762082-1
   mixpanel:
     token:
 
