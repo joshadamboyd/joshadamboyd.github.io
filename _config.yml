@@ -39,7 +39,7 @@ analytics: # Site analytics. Multiple can be used at the same time
     token:
 
 # Site verification
-verification: # Site verification
+verification:
   google:
   msvalidate:
 
@@ -53,10 +53,20 @@ timezone: America/Chicago # Your timezone
 
 # Collections
 collections:
-  - portfolio
+  timeline:
+    output: false
+  portfolio:
+    output: true
 
 # Default layouts
 defaults:
+  -
+    scope:
+      type: portfolio
+    values:
+      type: portfolio
+      layout: portfolio
+      comments: false
   -
     scope:
       type: posts
@@ -73,6 +83,7 @@ defaults:
 
 # CSS compression
 sass:
+  # style: expanded
   style: :compressed
 
 # Plugins
