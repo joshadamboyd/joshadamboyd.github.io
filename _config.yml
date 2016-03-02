@@ -60,22 +60,18 @@ collections:
 
 # Default layouts
 defaults:
-  -
-    scope:
+  - scope:
       type: portfolio
     values:
       type: portfolio
       layout: portfolio
-      comments: false
-  -
-    scope:
+  - scope:
       type: posts
     values:
       type: post
       layout: post
       comments: true
-  -
-    scope:
+  - scope:
       type: pages
     values:
       type: page
