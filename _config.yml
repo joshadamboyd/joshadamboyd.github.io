@@ -45,7 +45,7 @@ verification:
 
 # Pagination
 paginate: 12 # Number of posts to display per page
-permalink: /:year/:month/:day/:title/ # Post URL format
+permalink: /:year/:month/:title/ # Post URL format
 paginate_path: /page/:num # Post pagination URL format
 
 # Timezone
