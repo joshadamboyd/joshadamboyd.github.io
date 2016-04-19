@@ -4,6 +4,15 @@ JoshAdamBoyd.com using Bookstrap + Jekyll.
 
 #### Jekyll
 
+Required gems:
+
+```
+gem install jekyll
+gem install jekyll-sitemap
+gem install jekyll-paginate
+gem install jekyll-coffeescript
+```
+
 To build the site, run:
 
 ```
