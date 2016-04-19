@@ -14,13 +14,14 @@ url: http://joshadamboyd.com # Base URL of your site
 
 # Social networks
 social: # Social media usernames
-  twitter: joshadamboyd
+  dribbble: joshadamboyd
   facebook:
-  instagram: joshadamboyd
   github: joshadamboyd
+  instagram: joshadamboyd
   linkedin: joshua-boyd-92ab3aa
+  twitter: joshadamboyd
 
-# Disqus comments
+# Comments
 comments:
   provider: disqus # Comments provider. Only one can be used
   disqus:
@@ -93,4 +94,4 @@ exclude:
   - README.md
 
 # Highlighter
-highlighter: pygments
+highlighter: rouge
