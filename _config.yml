@@ -10,7 +10,7 @@ keywords: # Site keywords
 
 # URLs and paths
 baseurl: "" # Base path of your site. Useful when your Jekyll site is at /blog
-url: http://joshadamboyd.com # Base URL of your site
+url: http://joshadamboyd.github.io # Base URL of your site
 
 # Social networks
 social: # Social media usernames
