@@ -1,51 +1,39 @@
 <div id="footer">
   <div class="container">
     <ul class="list-inline social">
-      {% if site.social.dribbble %}
+      {% if site.social.twitter %}
       <li>
-        <a href="https://dribbble.com/{{ site.social.dribbble }}" target="_blank" title="Like me on Dribbble">
-          <i class="fa fa-dribbble"></i> <span class="hide">Dribbble</span>
-        </a>
+        <a class="twitter" href="https://twitter.com/{{ site.social.twitter }}" target="_blank" title="Follow me on Twitter">Twitter</a>
       </li>
       {% endif %}
 
-      {% if site.social.twitter %}
+      {% if site.social.dribbble %}
       <li>
-        <a href="https://twitter.com/{{ site.social.twitter }}" target="_blank" title="Follow me on Twitter">
-          <i class="fa fa-twitter"></i> <span class="hide">Twitter</span>
-        </a>
+        <a class="dribbble" href="https://dribbble.com/{{ site.social.dribbble }}" target="_blank" title="Like me on Dribbble">Dribbble</a>
       </li>
       {% endif %}
 
       {% if site.social.facebook %}
       <li>
-        <a href="https://facebook.com/{{ site.social.facebook }}" target="_blank" title="Like me on Facebook">
-          <i class="fa fa-facebook-square"></i> <span class="hide">Facebook</span>
-        </a>
+        <a class="facebook" href="https://facebook.com/{{ site.social.facebook }}" target="_blank" title="Like me on Facebook">Facebook</a>
       </li>
       {% endif %}
 
       {% if site.social.instagram %}
       <li>
-        <a href="http://instagram.com/{{ site.social.instagram }}" target="_blank" title="Like me on Instagram">
-          <i class="fa fa-instagram"></i> <span class="hide">Instagram</span>
-        </a>
+        <a class="instagram" href="http://instagram.com/{{ site.social.instagram }}" target="_blank" title="Like me on Instagram">Instagram</a>
       </li>
       {% endif %}
 
       {% if site.social.github %}
       <li>
-        <a href="https://github.com/{{ site.social.github }}" target="_blank" title="Fork me on Github">
-          <i class="fa fa-github"></i> <span class="hide">Github</span>
-        </a>
+        <a class="github" href="https://github.com/{{ site.social.github }}" target="_blank" title="Fork me on Github"></i>Github</a>
       </li>
       {% endif %}
 
       {% if site.social.linkedin %}
       <li>
-        <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank" title="Connect on Linkedin">
-          <i class="fa fa-linkedin"></i> <span class="hide">Linkedin</span>
-        </a>
+        <a class="linkedin" href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank" title="Connect on Linkedin">Linkedin</a>
       </li>
       {% endif %}
     </ul>
