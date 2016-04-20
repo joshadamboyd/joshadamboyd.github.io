@@ -16,6 +16,10 @@ layout: default
       <ul class="list-group">
         {% for post in paginator.posts %}
           <li class="list-group-item" itemscope itemtype="http://schema.org/BlogPosting">
+            {% if post.highlight %}
+              <img src="{{ post.highlight | prepend: site.baseurl }}">
+            {% endif %}
+
             <div class="page-header" itemprop="name headline">
               <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
             </div>

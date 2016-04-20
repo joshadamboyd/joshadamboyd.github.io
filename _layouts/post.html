@@ -12,6 +12,10 @@ layout: default
       {% include posts/pager.html %}
     </div>
 
+    {% if page.highlight %}
+      <img src="{{ page.highlight | prepend: site.baseurl }}">
+    {% endif %}
+
     <div class="date">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
     </div>
