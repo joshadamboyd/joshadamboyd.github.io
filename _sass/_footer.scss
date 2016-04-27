@@ -1,0 +1,15 @@
+/* FOOTER
+-------------------------------------------------- */
+#footer {
+  @include box-shadow(inset 0px 5px 10px -6px rgba(0,0,0,.75));
+
+  background-color: $gray-lighter;
+  padding: 50px 100px;
+  color: $gray-darker;
+
+  .column-title { }
+
+  .column-subtitle {
+    color: $gray-dark;
+  }
+}

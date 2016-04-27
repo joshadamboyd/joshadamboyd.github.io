@@ -1,6 +1,6 @@
 # Site
 title: JoshAdamBoyd # Name of your site
-email: noreply@example.com # Your email address
+email: joshadamboyd@mac.com # Your email address
 description: This is the description of my website. # Default description of your site
 keywords: # Site keywords
   - awesome
@@ -16,9 +16,9 @@ url: http://joshadamboyd.github.io # Base URL of your site
 social: # Social media usernames
   dribbble: joshadamboyd
   facebook:
-  github: joshadamboyd
+  github:
   instagram: joshadamboyd
-  linkedin: joshua-boyd-92ab3aa
+  linkedin:
   twitter: joshadamboyd
 
 # Comments

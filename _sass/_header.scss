@@ -1,0 +1,68 @@
+/* HEADER
+-------------------------------------------------- */
+#header { }
+
+
+/* HAMBURGER
+-------------------------------------------------- */
+.navbar-header {
+  float: none;
+}
+
+.navbar-toggle {
+  display: block;
+}
+
+.navbar-collapse.collapse {
+  display: none !important;
+}
+
+/* MENU MODAL
+-------------------------------------------------- */
+.fullscreen {
+  .modal-dialog {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    padding: 0;
+  }
+
+  .modal-content {
+    height: 100%;
+    min-height: 100%;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.97);
+    overflow: auto;
+  }
+
+  .modal-body {
+    ul { }
+
+    li {
+      padding: 10px 0 10px 0;
+    }
+
+    a {
+      font-size: 300%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .fullscreen {
+    .modal-body {
+      ul {
+        overflow: auto;
+      }
+
+      li {
+        padding: 4px 0 4px 0 ;
+      }
+
+      a {
+        font-size: 200%;
+      }
+    }
+  }
+}

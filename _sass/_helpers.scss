@@ -1,0 +1,48 @@
+/* IMAGES
+-------------------------------------------------- */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* TEXT
+-------------------------------------------------- */
+.text-small {
+  font-size: $font-size-small;
+}
+
+.text-large {
+  font-size: $font-size-large;
+}
+
+
+/* SOCIAL LINKS
+-------------------------------------------------- */
+.social {
+  a {
+    &.dribbble {
+      color: #ea4c89;
+    }
+
+    &.facebook {
+      color: #3b5998;
+    }
+
+    &.github {
+      color: #000000;
+    }
+
+    &.instagram {
+      color: #675144;
+    }
+
+    &.linkedin {
+      color: #007bb5;
+    }
+
+    &.twitter {
+      color: #55acee;
+    }
+  }
+}

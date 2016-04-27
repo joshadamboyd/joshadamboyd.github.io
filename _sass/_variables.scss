@@ -1,5 +1,5 @@
 $bootstrap-sass-asset-helper: false !default;
-// Sandstone 3.3.6
+
 // Variables
 // --------------------------------------------------
 
@@ -9,11 +9,11 @@ $bootstrap-sass-asset-helper: false !default;
 //## Gray and brand colors for use across Bootstrap.
 
 $gray-base:              #000 !default;
-$gray-darker:            #3E3F3A !default;
-$gray-dark:              #8E8C84 !default;
+$gray-darker:            #4a4a4a !default;
+$gray-dark:              #9c9c9c !default;
 $gray:                   #98978B !default;
 $gray-light:             #DFD7CA !default;
-$gray-lighter:           #F8F5F0 !default;
+$gray-lighter:           #f2f2f2 !default;
 
 $brand-primary:         #325D88 !default;
 $brand-success:         #93C54B !default;
@@ -29,12 +29,12 @@ $brand-danger:          #d9534f !default;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            #333333 !default;
+$text-color:            #3a3a3a !default;
 
 //** Global textual link color.
-$link-color:            #4a90e2 !default;
+$link-color:            #4e92df !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      darken($link-color, 10%) !default;
+$link-hover-color:      #3e77b7 !default;
 //** Link hover decoration.
 $link-hover-decoration: underline !default;
 
@@ -49,16 +49,16 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          16px !default;
-$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
-$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default;
+$font-size-small:         ceil(($font-size-base * 0.85)) !default;
 
-$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
-$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
-$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
-$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h1:            floor(($font-size-base * 2.6)) !default;
+$font-size-h2:            floor(($font-size-base * 2.15)) !default;
+$font-size-h3:            ceil(($font-size-base * 1.7)) !default;
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default;
 $font-size-h5:            $font-size-base !default;
-$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default;
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.428571429 !default; // 20/14
@@ -191,7 +191,6 @@ $input-color:                    $text-color !default;
 //** `<input>` border color
 $input-border:                   $gray-light !default;
 
-// TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
 //** Default `.form-control` border radius
 // This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
 $input-border-radius:            $border-radius-base !default;
