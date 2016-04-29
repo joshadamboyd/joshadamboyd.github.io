@@ -2,6 +2,16 @@
 -------------------------------------------------- */
 #header { }
 
+.navbar-default {
+  .navbar-brand {
+    @include text-hide();
+    @include img-retina("/images/logo/logo.png", "/images/logo/logo-2x.png", 150px, 150px);
+    @include square(150px);
+    @include center-block();
+    float: none;
+  }
+}
+
 
 /* MENU MODAL
 -------------------------------------------------- */
@@ -26,10 +36,10 @@
     ul { }
 
     li {
-      padding: 4px 0 4px 0;
+      padding: 4px 0;
 
       @media (min-width: $screen-md) {
-        padding: 10px 0 10px 0;
+        padding: 10px 0;
       }
     }
 
