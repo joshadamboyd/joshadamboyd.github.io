@@ -24,16 +24,14 @@
       </div>
 
       <div class="modal-body text-center">
-        <ul class="list-unstyled">
-          <li><a href="{{ "/" | prepend: site.baseurl }}" title="Home">Home</a></li>
+        <ul class="list-unstyled main-menu">
+          {% for post in site.posts limit:5 %}
+          <li><a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a></li>
+          {% endfor %}
           <li><a href="{{ "/portfolio" | prepend: site.baseurl }}" title="Portfolio">Portfolio</a></li>
           <li><a href="{{ "/timeline" | prepend: site.baseurl }}" title="Timeline">Timeline</a></li>
           <li><a href="{{ "/about" | prepend: site.baseurl }}" title="About">About</a></li>
           <li><a href="{{ "/contact" | prepend: site.baseurl }}" title="Contact">Contact</a></li>
-
-          {% for post in site.posts limit:5 %}
-            <li><a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a></li>
-          {% endfor %}
         </ul>
       </div>
     </div>
