@@ -1,14 +1,40 @@
 /* HEADER
 -------------------------------------------------- */
-#header { }
-
-.navbar-default {
+#header {
   .navbar-brand {
-    @include text-hide();
-    @include img-retina("/images/logo/logo.png", "/images/logo/logo-2x.png", 150px, 150px);
-    @include square(150px);
-    @include center-block();
-    float: none;
+    padding: 0;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include square(110px);
+    z-index: $logo-z-index;
+    @include transition(all .2s ease-in-out);
+
+    @media (min-width: $screen-md) {
+      @include square(150px);
+    }
+  }
+}
+
+
+/* HAMBURGER
+-------------------------------------------------- */
+.navbar-toggle {
+  display: block;
+  background-color: $mustard;
+  border-radius: 50%;
+  padding: 12px 7px;
+  @include transition(all .2s ease-in-out);
+
+  &:hover,
+  &:focus {
+    background-color: $banana;
+  }
+
+  .icon-bar {
+    background-color: $gray-base;
+    @include size(24px, 2px);
   }
 }
 
@@ -32,6 +58,14 @@
   }
 
   .modal-body {
+    padding-top: 85px;
+    @include transition(all .2s ease-in-out);
+
+    @media (min-width: $screen-md) {
+      padding-top: 120px;
+
+    }
+
     ul { }
 
     li {
