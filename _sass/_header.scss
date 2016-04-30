@@ -21,10 +21,15 @@
 /* HAMBURGER
 -------------------------------------------------- */
 .navbar-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  margin: 0;
   display: block;
   background-color: $mustard;
   border-radius: 50%;
   padding: 12px 7px;
+  z-index: $hamburger-z-index;
   @include transition(all .2s ease-in-out);
 
   &:hover,
