@@ -28,8 +28,6 @@
           {% for post in site.posts limit:5 %}
           <li><a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a></li>
           {% endfor %}
-          <li><a href="{{ "/portfolio" | prepend: site.baseurl }}" title="Portfolio">Portfolio</a></li>
-          <li><a href="{{ "/timeline" | prepend: site.baseurl }}" title="Timeline">Timeline</a></li>
           <li><a href="{{ "/about" | prepend: site.baseurl }}" title="About">About</a></li>
           <li><a href="{{ "/contact" | prepend: site.baseurl }}" title="Contact">Contact</a></li>
         </ul>
