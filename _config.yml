@@ -89,7 +89,7 @@ defaults:
     values:
       type: page
       layout: page
-      share: true
+      share: false
 
 # CSS compression
 sass:
