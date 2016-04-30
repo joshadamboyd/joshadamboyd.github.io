@@ -1,0 +1,59 @@
+/* SOCIAL LINKS
+-------------------------------------------------- */
+.social {
+  a {
+    &.dribbble {
+      color: $dribbble;
+
+      &:hover,
+      &:focus {
+        color: darken($dribbble, 10%);
+      }
+    }
+
+    &.facebook {
+      color: $facebook;
+
+      &:hover,
+      &:focus {
+        color: darken($facebook, 10%);
+      }
+    }
+
+    &.github {
+      color: $github;
+
+      &:hover,
+      &:focus {
+        color: darken($github, 10%);
+      }
+    }
+
+    &.instagram {
+      color: $instagram;
+
+      &:hover,
+      &:focus {
+        color: darken($instagram, 10%);
+      }
+    }
+
+    &.linkedin {
+      color: $linkedin;
+
+      &:hover,
+      &:focus {
+        color: darken($linkedin, 10%);
+      }
+    }
+
+    &.twitter {
+      color: $twitter;
+
+      &:hover,
+      &:focus {
+        color: darken($twitter, 10%);
+      }
+    }
+  }
+}

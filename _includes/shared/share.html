@@ -1,0 +1,59 @@
+{% if page.share %}
+
+{% assign page_title = page.title %}
+{% assign page_url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+
+<div class="share-container">
+  <span class="label">Share this page:</span>
+
+  <ul class="list-inline text-center share">
+    {% if site.share.email %}
+    <li class="email">
+      <a href="mailto:?subject={{ page_title }}&amp;body={{ page_url }}">
+        <i class="fa fa-at" aria-hidden="true"></i> Email
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.share.facebook %}
+    <li class="facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ page_url }}" class="popup">
+        <i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.share.linkedin %}
+    <li class="linkedin">
+      <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ page_url }}&amp;title={{ page_title }}&amp;summary={{ page_title }}" class="popup">
+        <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.share.twitter %}
+    <li class="twitter">
+      <a href="https://twitter.com/intent/tweet?text={{ page_title }}%20{{ page_url }}" class="popup">
+        <i class="fa fa-twitter" aria-hidden="true"></i> Twitter
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.share.google %}
+    <li class="googleplus">
+      <a href="https://plus.google.com/share?url={{ page_url }}" class="popup">
+        <i class="fa fa-google-plus" aria-hidden="true"></i> Google+
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.share.pinterest %}
+    <li class="pinterest">
+      <a href="http://pinterest.com/pin/create/button/?url={{ page_url }}&amp;media={{ "/icons/social/pinterest.png" | prepend: site.baseurl | prepend: site.url }}&amp;description={{ page_title }}">
+        <i class="fa fa-pinterest" aria-hidden="true"></i> Pinterest
+      </a>
+    </li>
+    {% endif %}
+  </ul>
+</div>
+{% endif %}

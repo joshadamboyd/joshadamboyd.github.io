@@ -59,6 +59,15 @@ collections:
   portfolio:
     output: true
 
+# Share
+share:
+  email: false
+  facebook: true
+  linkedin: true
+  twitter: true
+  google: true
+  pinterest: false
+
 # Default layouts
 defaults:
   - scope:
@@ -66,6 +75,7 @@ defaults:
     values:
       type: portfolio
       layout: portfolio
+      share: false
   - scope:
       type: posts
     values:
@@ -73,11 +83,13 @@ defaults:
       layout: post
       comments: true
       highlight:
+      share: true
   - scope:
       type: pages
     values:
       type: page
       layout: page
+      share: true
 
 # CSS compression
 sass:

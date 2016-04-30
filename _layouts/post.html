@@ -24,12 +24,12 @@ layout: default
       {{ content }}
     </div>
 
+    {% include shared/share.html %}
+
     <div id="pagination-bottom">
       {% include posts/pager.html %}
     </div>
 
-    {% if page.comments %}
-      {% include posts/comments.html %}
-    {% endif %}
+    {% include posts/comments.html %}
   </div>
 </article>

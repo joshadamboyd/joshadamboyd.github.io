@@ -1,5 +1,3 @@
 ---
 ---
-$ ->
-  console.log 'JoshAdamBoyd'
-  return
+console.log 'JoshAdamBoyd'

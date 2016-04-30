@@ -1,0 +1,31 @@
+/* Share LINKS
+-------------------------------------------------- */
+.share-container { }
+
+.share {
+  li {
+    &.email a {
+      color: $email;
+    }
+
+    &.facebook a {
+      color: $facebook;
+    }
+
+    &.linkedin a {
+      color: $linkedin;
+    }
+
+    &.twitter a {
+      color: $twitter;
+    }
+
+    &.googleplus a {
+      color: $googleplus;
+    }
+
+    &.pinterest a {
+      color: $pinterest;
+    }
+  }
+}
