@@ -1,6 +1,16 @@
 $bootstrap-sass-asset-helper: false !default;
 
 
+// Custom Variables
+// --------------------------------------------------
+
+$zindex-modal-pre:  1050 !default;
+
+$mustard:           #e5d437 !default;
+$banana:            #f7e53b !default;
+$logo-z-index:      $zindex-modal-pre + 1 !default;
+$hamburger-z-index: $zindex-modal-pre - 1 !default;
+
 
 // Variables
 // --------------------------------------------------
@@ -277,7 +287,7 @@ $zindex-popover:           1060 !default;
 $zindex-tooltip:           1070 !default;
 $zindex-navbar-fixed:      1030 !default;
 $zindex-modal-background:  1040 !default;
-$zindex-modal:             1050 !default;
+$zindex-modal:             $zindex-modal-pre !default;
 
 
 //== Media queries breakpoints
@@ -598,16 +608,16 @@ $modal-title-padding:         15px !default;
 $modal-title-line-height:     $line-height-base !default;
 
 //** Background color of modal content area
-$modal-content-bg:                             #fff !default;
+$modal-content-bg:                             $banana !default;
 //** Modal content border color
 $modal-content-border-color:                   $gray-lighter !default;
 //** Modal content border color **for IE8**
 $modal-content-fallback-border-color:          $gray-lighter !default;
 
 //** Modal backdrop background color
-$modal-backdrop-bg:           #000 !default;
+$modal-backdrop-bg:           $banana !default;
 //** Modal backdrop opacity
-$modal-backdrop-opacity:      .5 !default;
+$modal-backdrop-opacity:      1 !default;
 //** Modal header border color
 $modal-header-border-color:   $gray-lighter !default;
 //** Modal footer border color

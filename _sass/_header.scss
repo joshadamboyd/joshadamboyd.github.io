@@ -65,11 +65,16 @@
   }
 
   .modal-content {
+    overflow: auto;
     height: 100%;
     min-height: 100%;
     border-radius: 0;
-    background: rgba(255, 255, 255, 0.97);
-    overflow: auto;
+    border: none;
+    background: $mustard;
+    background: -moz-linear-gradient(-45deg, $mustard 0%, $mustard 50%, $banana 50%, $banana 100%);
+    background: -webkit-linear-gradient(-45deg, $mustard 0%,$mustard 50%,$banana 50%,$banana 100%);
+    background: linear-gradient(135deg, $mustard 0%,$mustard 50%,$banana 50%,$banana 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$mustard', endColorstr='$banana',GradientType=1 );
   }
 
   .modal-body {
