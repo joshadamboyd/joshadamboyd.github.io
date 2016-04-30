@@ -9,13 +9,9 @@
       {% include header.html %}
 
       {% if page.type == "list" %}
-      <div class="jumbotron">
-        <div class="container">
-          <h1>Howdy, I'm Josh Boyd</h1>
-
-          <h2>I'm a Sr UX Designer, family man <span class="amp">&amp;</span> lover of the outdoors</h2>
-        </div>
-      </div>
+        {% include jumbotron/list.html %}
+      {% elsif page.type == "notfound" %}
+        {% include jumbotron/notfound.html %}
       {% endif %}
 
       <div id="content" class="container">

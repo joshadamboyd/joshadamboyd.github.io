@@ -17,6 +17,16 @@
   }
 }
 
+.jumbo-header {
+  text-align: center;
+  padding: 120px 0 30px;
+  @include transition(all .2s ease-in-out);
+
+  @media (min-width: $screen-md) {
+    padding: 190px 0 100px;
+  }
+}
+
 
 /* HAMBURGER
 -------------------------------------------------- */
