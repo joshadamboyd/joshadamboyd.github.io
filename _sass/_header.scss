@@ -25,6 +25,20 @@
   @media (min-width: $screen-md) {
     padding: 190px 0 100px;
   }
+
+  &.hero-home,
+  &.hero-error {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &.hero-home {
+    background-image: url(../images/hero/home.png);
+  }
+
+  &.hero-error {
+    background-image: url(../images/hero/error.png);
+  }
 }
 
 
