@@ -21,6 +21,7 @@
   text-align: center;
   padding: 120px 0 30px;
   @include transition(all .2s ease-in-out);
+  margin-bottom: 0;
 
   @media (min-width: $screen-md) {
     padding: 190px 0 100px;
