@@ -3,10 +3,14 @@ title: JoshAdamBoyd # Name of your site
 email: joshadamboyd@mac.com # Your email address
 description: This is the description of my website. # Default description of your site
 keywords: # Site keywords
-  - awesome
-  - keywords
-  - are
-  - awesome
+  - UX
+  - Designer
+  - Illustrator
+  - Blog
+  - Josh Adam Boyd
+  - Josh Boyd
+  - JoshAdamBoyd
+
 
 # URLs and paths
 baseurl: "" # Base path of your site. Useful when your Jekyll site is at /blog
