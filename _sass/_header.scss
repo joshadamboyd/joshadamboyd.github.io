@@ -8,7 +8,7 @@
     left: 50%;
     transform: translateX(-50%);
     @include square(110px);
-    z-index: 2;
+    z-index: 4;
     @include transition(all .2s ease-in-out);
 
     @media (min-width: $screen-md) {

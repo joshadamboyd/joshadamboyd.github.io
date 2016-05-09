@@ -5,7 +5,7 @@
   background-color: $mustard;
   border: 1px solid $mustard;
   border-radius: 50%;
-  z-index: 4;
+  z-index: 6;
   @include square(44px);
   top: 15px;
   right: 15px;
@@ -77,7 +77,7 @@ ul.hamburger-menu {
   height: 100%;
   width: 100%;
   padding: 10px;
-  z-index: 3;
+  z-index: 5;
   background: $mustard;
   background: -moz-linear-gradient(-45deg, $mustard 0%, $mustard 50%, $banana 50%, $banana 100%);
   background: -webkit-linear-gradient(-45deg, $mustard 0%,$mustard 50%,$banana 50%,$banana 100%);
@@ -183,7 +183,7 @@ ul.hamburger-menu {
 }
 
 .cd-overlay-nav {
-  z-index: 2;
+  z-index: 4;
 
   span {
     background-color: $mustard;
@@ -191,7 +191,7 @@ ul.hamburger-menu {
 }
 
 .cd-overlay-content {
-  z-index: 4;
+  z-index: 6;
 
   span {
     background-color: #fff;

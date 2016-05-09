@@ -3,13 +3,13 @@ layout: default
 ---
 
 <article class="post post-full" itemscope itemtype="http://schema.org/BlogPosting">
-    <div id="pagination-top">
-      {% include posts/pager.html %}
-    </div>
-
     {% if page.highlight %}
       <img src="{{ page.highlight | prepend: site.baseurl }}">
     {% endif %}
+
+    <div id="pagination-top">
+      {% include posts/pager.html %}
+    </div>
 
     <div class="page-header" itemprop="name headline">
       <h1>{{ page.title }}</h1>
