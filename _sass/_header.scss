@@ -8,7 +8,7 @@
     left: 50%;
     transform: translateX(-50%);
     @include square(110px);
-    z-index: $logo-z-index;
+    z-index: 2;
     @include transition(all .2s ease-in-out);
 
     @media (min-width: $screen-md) {
@@ -39,86 +39,5 @@
 
   &.hero-error {
     background-image: url(../images/hero/error.png);
-  }
-}
-
-
-/* HAMBURGER
--------------------------------------------------- */
-.navbar-toggle {
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  margin: 0;
-  display: block;
-  background-color: $mustard;
-  border: 1px solid $banana;
-  border-radius: 50%;
-  padding: 10px 12px 9px;
-  z-index: $hamburger-z-index;
-  @include transition(all .2s ease-in-out);
-
-  &:hover,
-  &:focus {
-    border: 1px solid $mustard;
-    background-color: $banana;
-  }
-
-  .icon-bar {
-    background-color: $gray-base;
-    @include size(24px, 2px);
-  }
-}
-
-
-/* MENU MODAL
--------------------------------------------------- */
-.fullscreen {
-  .modal-dialog {
-    margin: 0;
-    @include square(100%);
-    min-height: 100%;
-    padding: 0;
-  }
-
-  .modal-content {
-    overflow: auto;
-    height: 100%;
-    min-height: 100%;
-    border-radius: 0;
-    border: none;
-    background: $mustard;
-    background: -moz-linear-gradient(-45deg, $mustard 0%, $mustard 50%, $banana 50%, $banana 100%);
-    background: -webkit-linear-gradient(-45deg, $mustard 0%,$mustard 50%,$banana 50%,$banana 100%);
-    background: linear-gradient(135deg, $mustard 0%,$mustard 50%,$banana 50%,$banana 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$mustard', endColorstr='$banana',GradientType=1 );
-  }
-
-  .modal-body {
-    padding-top: 85px;
-    @include transition(all .2s ease-in-out);
-
-    @media (min-width: $screen-md) {
-      padding-top: 120px;
-
-    }
-
-    ul { }
-
-    li {
-      padding: 4px 0;
-
-      @media (min-width: $screen-md) {
-        padding: 10px 0;
-      }
-    }
-
-    a {
-      font-size: 200%;
-
-      @media (min-width: $screen-md) {
-        font-size: 250%;
-      }
-    }
   }
 }

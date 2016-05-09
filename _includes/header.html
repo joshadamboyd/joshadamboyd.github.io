@@ -3,32 +3,5 @@
     <img src="{{ "/images/logo/logo.png" | prepend: site.baseurl }}" alt="{{ site.title }}" title="{{ site.title }}">
   </a>
 
-  <button type="button" class="navbar-toggle btn btn-default btn-lg" data-toggle="modal" data-target="#menu-modal">
-    <span class="sr-only">Toggle navigation</span>
-
-    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-  </button>
+  {% include menu.html %}
 </header>
-
-<div class="modal fade fullscreen" id="menu-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content" style="color:#fff;">
-      <div class="modal-header" style="border:0;">
-        <button type="button" class="close btn btn-link" data-dismiss="modal" aria-hidden="true">
-          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-        </button>
-
-        <h4 class="modal-title text-center"><span class="sr-only">Main navigation</span></h4>
-      </div>
-
-      <div class="modal-body text-center">
-        <ul class="list-unstyled main-menu">
-          {% for post in site.posts limit:5 %}
-            <li><a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" {% if page.url == post.url %}class="active"{% endif %}>{{ post.title }}</a></li>
-          {% endfor %}
-          <li><a href="{{ "/about" | prepend: site.baseurl }}" title="About" {% if page.url == "/about/" %}class="active"{% endif %}>About</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>

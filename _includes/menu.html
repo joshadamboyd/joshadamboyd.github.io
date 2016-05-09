@@ -1,0 +1,27 @@
+<nav id="menu">
+  <button type="button" class="hamburger-trigger">
+    <span class="sr-only">Toggle navigation</span>
+
+    <span class="hamburger-icon"></span>
+  </button>
+
+  <ul class="hamburger-menu">
+    <li class="logo"><a href="{{ "/" | prepend: site.baseurl }}"><img src="{{ "/images/logo/logo.png" | prepend: site.baseurl }}" alt="{{ site.title }}" title="{{ site.title }}"></a></li>
+    {% if site.posts.size > 0 %}
+      <li class="section"><span>Blog</span></li>
+    {% endif %}
+    {% for post in site.posts limit:5 %}
+      <li><a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" {% if page.url == post.url %}class="active"{% endif %}>{{ post.title }}</a></li>
+    {% endfor %}
+    <li class="section"><span>About</span></li>
+    <li><a href="{{ "/about" | prepend: site.baseurl }}" title="About" {% if page.url == "/about/" %}class="active"{% endif %}>About</a></li>
+  </ul>
+
+  <div class="cd-overlay-nav">
+    <span></span>
+  </div>
+
+  <div class="cd-overlay-content">
+    <span></span>
+  </div>
+</nav>
