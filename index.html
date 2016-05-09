@@ -13,7 +13,7 @@ type: list
 
 {% if paginator.posts %}
   {% for post in paginator.posts %}
-    <article class="post-full" itemscope itemtype="http://schema.org/BlogPosting">
+    <article class="post post-excerpt" itemscope itemtype="http://schema.org/BlogPosting">
       {% if post.highlight %}
         <img src="{{ post.highlight | prepend: site.baseurl }}">
       {% endif %}
