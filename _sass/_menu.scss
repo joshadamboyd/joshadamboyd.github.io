@@ -140,6 +140,7 @@ ul.hamburger-menu {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     transition: color 0.2s;
+    color: $gray-base;
 
     @media (min-width: $screen-md) {
       font-size: 150%;
