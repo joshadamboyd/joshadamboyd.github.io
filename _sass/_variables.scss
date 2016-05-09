@@ -54,7 +54,7 @@ $link-color:            $brand-primary !default;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      darken($link-color, 15%) !default;
 //** Link hover decoration.
-$link-hover-decoration: underline !default;
+$link-hover-decoration: none !default;
 
 
 //== Typography
@@ -470,15 +470,15 @@ $nav-pills-active-link-hover-color:         $component-active-color !default;
 //
 //##
 
-$pagination-color:                     $gray !default;
+$pagination-color:                     $link-color !default;
 $pagination-bg:                        transparent !default;
 $pagination-border:                    transparent !default;
 
-$pagination-hover-color:               $gray-dark !default;
+$pagination-hover-color:               $link-hover-color !default;
 $pagination-hover-bg:                  transparent !default;
 $pagination-hover-border:              $pagination-border !default;
 
-$pagination-active-color:              $gray-dark !default;
+$pagination-active-color:              $link-hover-color !default;
 $pagination-active-bg:                 transparent !default;
 $pagination-active-border:             transparent !default;
 

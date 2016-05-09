@@ -7,9 +7,16 @@ article {
 
   &.post-full { }
 
+  .blog {
+    margin-top: 15px;
+  }
+
   .page-header { }
 
-  .date { }
+  .date {
+    margin: 15px 0;
+    color: $gray-light;
+  }
 
   .content { }
 }

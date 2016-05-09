@@ -6,26 +6,56 @@
   li {
     &.email a {
       color: $email;
+
+      &:hover,
+      &:focus {
+        color: darken($email, 10%);
+      }
     }
 
     &.facebook a {
       color: $facebook;
+
+      &:hover,
+      &:focus {
+        color: darken($facebook, 10%);
+      }
     }
 
     &.linkedin a {
       color: $linkedin;
+
+      &:hover,
+      &:focus {
+        color: darken($linkedin, 10%);
+      }
     }
 
     &.twitter a {
       color: $twitter;
+
+      &:hover,
+      &:focus {
+        color: darken($twitter, 10%);
+      }
     }
 
     &.googleplus a {
       color: $googleplus;
+
+      &:hover,
+      &:focus {
+        color: darken($googleplus, 10%);
+      }
     }
 
     &.pinterest a {
       color: $pinterest;
+
+      &:hover,
+      &:focus {
+        color: darken($pinterest, 10%);
+      }
     }
   }
 }
