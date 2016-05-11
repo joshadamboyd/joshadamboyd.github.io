@@ -14,7 +14,7 @@
       <li><a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" {% if page.url == post.url %}class="active"{% endif %}>{{ post.title }}</a></li>
     {% endfor %}
     <li class="section"><span>About</span></li>
-    <li><a href="{{ "/about" | prepend: site.baseurl }}" title="About" {% if page.url == "/about/" %}class="active"{% endif %}>About</a></li>
+    <li><a href="{{ "/about" | prepend: site.baseurl }}" title="About Me" {% if page.url == "/about/" %}class="active"{% endif %}>About Me</a></li>
   </ul>
 
   <div class="cd-overlay-nav">

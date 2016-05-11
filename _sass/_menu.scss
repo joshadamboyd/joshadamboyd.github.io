@@ -2,8 +2,8 @@
 -------------------------------------------------- */
 .hamburger-trigger {
   position: fixed;
-  background-color: $mustard;
-  border: 1px solid $mustard;
+  background-color: $banana;
+  border: 1px solid $banana;
   border-radius: 50%;
   z-index: 6;
   @include square(44px);
@@ -13,8 +13,8 @@
 
   &:hover,
   &:focus {
-    background-color: $banana;
-    border-color: $banana;
+    background-color: $mustard;
+    border-color: $mustard;
     outline: 0;
   }
 
@@ -78,11 +78,7 @@ ul.hamburger-menu {
   width: 100%;
   padding: 10px;
   z-index: 5;
-  background: $mustard;
-  background: -moz-linear-gradient(-45deg, $mustard 0%, $mustard 50%, $banana 50%, $banana 100%);
-  background: -webkit-linear-gradient(-45deg, $mustard 0%,$mustard 50%,$banana 50%,$banana 100%);
-  background: linear-gradient(135deg, $mustard 0%,$mustard 50%,$banana 50%,$banana 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$mustard', endColorstr='$banana',GradientType=1 );
+  background-color: $banana;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   visibility: hidden;
@@ -130,7 +126,7 @@ ul.hamburger-menu {
       }
 
       span {
-        background: $mustard;
+        background: $banana;
         padding: 0 15px;
       }
     }
