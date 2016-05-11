@@ -29,7 +29,7 @@ social: # Social media usernames
 comments:
   provider: disqus # Comments provider. Only one can be used
   disqus:
-    short_name:
+    short_name: joshadamboyd
   facebook:
     app_id:
     num_posts: 5
