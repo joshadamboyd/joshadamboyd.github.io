@@ -27,6 +27,15 @@
     padding: 190px 0 100px;
   }
 
+  a {
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      color: $gray-darker;
+    }
+  }
+
   &.hero-home,
   &.hero-error {
     background-position: center center;
