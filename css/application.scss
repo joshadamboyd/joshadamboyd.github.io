@@ -8,8 +8,11 @@
 
 /* FONTS
 -------------------------------------------------- */
-@import "font-roboto";
-@import "font-awesome";
+@import "fonts/pt-serif";
+@import "fonts/roboto";
+@import "fonts/font-awesome";
+
+@import "overrides";
 
 @import "articles";
 @import "container";

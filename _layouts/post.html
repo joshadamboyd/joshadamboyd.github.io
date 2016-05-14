@@ -2,33 +2,35 @@
 layout: default
 ---
 
-<article class="post post-full" itemscope itemtype="http://schema.org/BlogPosting">
-    {% if page.highlight %}
-      <img src="{{ page.highlight | prepend: site.baseurl }}">
-    {% endif %}
+<div class="articles">
+  <article class="post post-full" itemscope itemtype="http://schema.org/BlogPosting">
+      {% if page.highlight %}
+        <img src="{{ page.highlight | prepend: site.baseurl }}">
+      {% endif %}
 
-    <div class="blog">
-        <a href="{{ "/" | prepend: site.baseurl }}" title="Blog"><span aria-hidden="true" class="caret-left">&larr;</span> Back to Blog</a>
+      <div class="blog">
+          <a href="{{ "/" | prepend: site.baseurl }}" title="Blog"><span aria-hidden="true" class="caret-left">&larr;</span> Back to Blog</a>
+      </div>
+
+      <div class="post-header" itemprop="name headline">
+        <h2>{{ page.title }}</h2>
+      </div>
+
+      <div class="date">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+      </div>
+
+      <div class="content" itemprop="articleBody">
+        {{ content }}
+      </div>
+
+      {% include shared/share.html %}
+
+      <div id="pagination-bottom">
+        {% include posts/pager.html %}
+      </div>
+
+      {% include posts/comments.html %}
     </div>
-
-    <div class="page-header" itemprop="name headline">
-      <h2>{{ page.title }}</h2>
-    </div>
-
-    <div class="date">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-    </div>
-
-    <div class="content" itemprop="articleBody">
-      {{ content }}
-    </div>
-
-    {% include shared/share.html %}
-
-    <div id="pagination-bottom">
-      {% include posts/pager.html %}
-    </div>
-
-    {% include posts/comments.html %}
-  </div>
-</article>
+  </article>
+</div>

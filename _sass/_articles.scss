@@ -1,7 +1,19 @@
 /* ARTICLES
 -------------------------------------------------- */
+.articles {
+  article {
+    border-bottom: 1px solid $page-header-border-color;
+
+    &:last-child {
+      border-bottom: 0 none;
+    }
+  }
+}
+
 article {
-  &.post { }
+  &.post {
+    padding: 50px 0;
+  }
 
   &.post-excerpt { }
 
@@ -11,12 +23,26 @@ article {
     margin-top: 15px;
   }
 
-  .page-header { }
+  .post-header {
+    color: $gray;
+
+    a {
+      color: $gray;
+
+      &:hover,
+      &:focus {
+        color: darken($gray, 10%);
+      }
+    }
+  }
 
   .date {
+    font-family: $font-family-pt-serif;
     margin: 15px 0;
     color: $gray-light;
   }
 
-  .content { }
+  .content {
+    font-family: $font-family-pt-serif;
+  }
 }

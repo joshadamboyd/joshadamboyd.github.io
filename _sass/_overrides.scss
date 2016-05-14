@@ -1,0 +1,11 @@
+/* OVERRIDES
+-------------------------------------------------- */
+
+a {
+  @include transition(all .2s ease-in-out);
+}
+
+.page-header {
+  display: none;
+  border-bottom: 0 none;
+}
