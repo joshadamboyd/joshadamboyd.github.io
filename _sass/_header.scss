@@ -11,9 +11,18 @@
     z-index: 4;
     @include transition(all .2s ease-in-out);
 
+    &.smaller {
+      @include square(90px);
+    }
+
     @media (min-width: $screen-md) {
       @include square(150px);
+
+      &.smaller {
+        @include square(110px);
+      }
     }
+
   }
 }
 
