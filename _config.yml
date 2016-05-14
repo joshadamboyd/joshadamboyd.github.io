@@ -87,7 +87,7 @@ defaults:
       layout: post
       comments: true
       highlight:
-      share: true
+      share: false
   - scope:
       type: pages
     values:
