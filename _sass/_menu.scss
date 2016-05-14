@@ -102,8 +102,19 @@ ul.hamburger-menu {
       margin: 30px 0;
     }
 
-    &.logo a {
-      display: inline-block;
+    &.logo {
+      a {
+        display: inline-block;
+      }
+
+      img {
+        @include transition(all .2s ease-in-out);
+        margin: 0 auto;
+
+        @media (max-width: $screen-md) {
+          @include square(50%);
+        }
+      }
     }
 
     &.section {
