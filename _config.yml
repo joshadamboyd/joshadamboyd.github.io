@@ -105,6 +105,7 @@ gems:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-coffeescript
+  - jekyll-seo-tag
 
 # Exclude in build
 exclude:

@@ -1,23 +1,36 @@
 /* ARTICLES
 -------------------------------------------------- */
 .articles {
-  article {
-    border-bottom: 1px solid $page-header-border-color;
+  article  {
+    .post-body {
+      border-bottom: 1px solid $page-header-border-color;
+    }
 
     &:last-child {
-      border-bottom: 0 none;
+      .post-body {
+        border-bottom: 0 none;
+      }
     }
   }
 }
 
+
+/* ARTICLE
+-------------------------------------------------- */
 article {
   &.post {
-    padding: 50px 0;
+    padding: 50px 0 0;
   }
 
   &.post-excerpt { }
 
   &.post-full { }
+
+  .post-image { }
+
+  .post-body {
+    padding: 0 0 50px;
+  }
 
   .blog {
     margin-top: 15px;
@@ -38,7 +51,7 @@ article {
 
   .date {
     font-family: $font-family-pt-serif;
-    margin: 15px 0;
+    margin: 15px 0 40px;
     color: $gray-light;
   }
 

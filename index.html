@@ -14,26 +14,30 @@ type: list
 {% if paginator.posts %}
   <div class="articles">
     {% for post in paginator.posts %}
-      <article class="post post-excerpt" itemscope itemtype="http://schema.org/BlogPosting">
+      <article class="post post-excerpt clearfix" itemscope itemtype="http://schema.org/BlogPosting">
         {% if post.highlight %}
-          <img src="{{ post.highlight | prepend: site.baseurl }}">
+          <div class="post-image">
+            <img src="{{ post.highlight | prepend: site.baseurl }}">
+          </div>
         {% endif %}
 
-        <div class="post-header" itemprop="name headline">
-          <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-        </div>
+        <div class="post-body col-md-10 col-md-offset-1">
+          <div class="post-header" itemprop="name headline">
+            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+          </div>
 
-        <div class="date">
-          <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
-        </div>
+          <div class="date">
+            <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
+          </div>
 
-        <div class="content" itemprop="articleBody">
-          {{ post.excerpt | strip_html}}
-        </div>
+          <div class="content" itemprop="articleBody">
+            {{ post.excerpt | strip_html}}
+          </div>
 
-        <p class="post-more">
-          <a href="{{ post.url | prepend: site.baseurl }}">Read more &raquo;</a>
-        </p>
+          <p class="post-more">
+            <a href="{{ post.url | prepend: site.baseurl }}">Read more &raquo;</a>
+          </p>
+        </div>
       </article>
     {% endfor %}
   </div>
