@@ -83,3 +83,9 @@ code block
 \*literal asterisks\*
 
 [example]: http://example.com/  "Optional Title Here"
+
+Video Links
+
+{% include videos/vimeo.html id="1234567" %} - This is a vimeo link
+
+{% include videos/youtube.html id="123abc" %} - This is a youtube link
