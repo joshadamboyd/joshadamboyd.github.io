@@ -1,0 +1,11 @@
+{% comment %}
+  Usage:
+    {% include videos/youtube.html id="123abc" %}
+
+    {% include videos/youtube.html id="123abc" width="100" height="100" %}
+{% endcomment %}
+<iframe src="http://www.youtube.com/embed/{{ include.id }}"
+        width="{{ include.width | default: '640' }}"
+        height="{{ include.height | default: '480' }}"
+        frameborder="0"
+        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
