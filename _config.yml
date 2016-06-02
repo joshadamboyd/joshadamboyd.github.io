@@ -113,3 +113,6 @@ exclude:
 
 # Highlighter
 highlighter: rouge
+
+# Excpert
+excerpt_separator: <!--more-->
