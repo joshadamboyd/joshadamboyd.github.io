@@ -5,6 +5,12 @@ a {
   @include transition(all .2s ease-in-out);
 }
 
+hr {
+  border-top: 1px solid $page-header-border-color;
+  margin: inherit auto;
+  width: 75%;
+}
+
 .page-header {
   display: none;
   border-bottom: 0 none;
