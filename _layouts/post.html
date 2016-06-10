@@ -4,12 +4,6 @@ layout: default
 
 <div class="articles">
   <article class="post post-full clearfix" itemscope itemtype="http://schema.org/BlogPosting">
-    {% if page.highlight %}
-      <div class="post-image">
-        <img src="{{ page.highlight | prepend: site.baseurl }}">
-      </div>
-    {% endif %}
-
     <div class="post-body col-md-10 col-md-offset-1">
       <div class="blog">
         <a href="{{ "/" | prepend: site.baseurl }}" title="Blog"><span aria-hidden="true" class="caret-left">&larr;</span> Back to Blog</a>
@@ -18,6 +12,12 @@ layout: default
       <div class="post-header" itemprop="name headline">
         <h2>{{ page.title }}</h2>
       </div>
+
+      {% if page.highlight %}
+        <div class="post-image">
+          <img src="{{ page.highlight | prepend: site.baseurl }}">
+        </div>
+      {% endif %}
 
       <div class="date">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>

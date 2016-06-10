@@ -15,12 +15,6 @@ type: list
   <div class="articles">
     {% for post in paginator.posts %}
       <article class="post post-excerpt clearfix" itemscope itemtype="http://schema.org/BlogPosting">
-        {% if post.highlight %}
-          <div class="post-image">
-            <img src="{{ post.highlight | prepend: site.baseurl }}">
-          </div>
-        {% endif %}
-
         <div class="post-body col-md-10 col-md-offset-1">
           <div class="post-header" itemprop="name headline">
             <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
@@ -29,6 +23,12 @@ type: list
           <div class="date">
             <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
           </div>
+
+          {% if post.highlight %}
+            <div class="post-image">
+              <img src="{{ post.highlight | prepend: site.baseurl }}">
+            </div>
+          {% endif %}
 
           <div class="content" itemprop="articleBody">
             {{ post.excerpt}}
