@@ -85,6 +85,8 @@ defaults:
     values:
       type: post
       layout: post
+      author_profile: true
+      author: joshadamboyd
       comments: true
       highlight:
       share: false

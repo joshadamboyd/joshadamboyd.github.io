@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% assign author = site.data.authors[page.author] %}
+
 <div class="articles">
   <article class="post post-full clearfix" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="post-body col-md-10 col-md-offset-1">
@@ -16,6 +18,14 @@ layout: default
       <div class="date">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
       </div>
+
+      {% if page.author_profile && author %}
+      <div class="meta">
+        <span class="author">
+          Written by <a href="{{ author.web }}">{{ author.name }}</a>
+        </span>
+      </div>
+      {% endif %}
 
       {% if page.highlight %}
         <div class="post-image">

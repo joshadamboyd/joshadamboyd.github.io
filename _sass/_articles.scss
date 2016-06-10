@@ -51,12 +51,19 @@ article {
 
   .date {
     font-family: $font-family-pt-serif;
-    margin: 15px 0 40px;
+    margin: 15px 0;
     color: $gray-light;
+  }
+
+  .meta {
+    display: none;
+
+    .author { }
   }
 
   .content {
     font-family: $font-family-pt-serif;
+    margin: 15px 0;
   }
 
   .post-more {
