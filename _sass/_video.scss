@@ -1,0 +1,12 @@
+/* VIDEOS
+-------------------------------------------------- */
+
+.video {
+  &.video-vimeo { }
+
+  &.video-youtube { }
+
+  iframe {
+    max-width: 100%;
+  }
+}

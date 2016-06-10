@@ -11,10 +11,10 @@
     {% include videos/youtube.html id="dQw4w9WgXcQ" width="100" height="100" align="right" %}
 
 {% endcomment %}
-<div class="video video-youtube text-{{ include.align | default: 'center' }}">
+<aside class="video video-youtube text-{{ include.align | default: 'center' }}">
   <iframe src="http://www.youtube.com/embed/{{ include.id | default: 'dQw4w9WgXcQ' }}"
           width="{{ include.width | default: '640' }}"
           height="{{ include.height | default: '480' }}"
           frameborder="0"
           webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
+</aside>
