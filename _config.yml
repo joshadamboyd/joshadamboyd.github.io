@@ -80,6 +80,10 @@ defaults:
       type: portfolio
       layout: portfolio
       share: false
+      hero:
+        section: page
+        title: Josh Adam Boyd
+        subtitle: Sr UX Designer, Husband, and Dad
   - scope:
       type: posts
     values:
@@ -88,14 +92,21 @@ defaults:
       author_profile: true
       author: joshadamboyd
       comments: true
-      highlight:
       share: false
+      hero:
+        section: post
+        title: Josh Adam Boyd
+        subtitle: Sr UX Designer, Husband, and Dad
   - scope:
       type: pages
     values:
       type: page
       layout: page
       share: false
+      hero:
+        section: page
+        title: Josh Adam Boyd
+        subtitle: Sr UX Designer, Husband, and Dad
 
 # CSS compression
 sass:
