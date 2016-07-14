@@ -1,61 +1,74 @@
 /* HEADER
 -------------------------------------------------- */
-#header {
-  .navbar-brand {
-    padding: 0;
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    @include square(110px);
-    z-index: 4;
-    @include transition(all .2s ease-in-out);
+#header { }
 
-    &.smaller {
-      @include square(90px);
-    }
-
-    @media (min-width: $screen-md) {
-      @include square(150px);
-
-      &.smaller {
-        @include square(110px);
-      }
-    }
-
-  }
+.navbar-header {
+  float: inherit;
 }
 
-.jumbo-header {
-  text-align: center;
-  padding: 120px 0 30px;
+.navbar {
+  @include box-shadow(0px 5px 10px -5px rgba(0,0,0,0.75));
+}
+
+.navbar-brand {
+  @include navbar-vertical-align(34px);
+  height: inherit;
+  display: inline-block;
   @include transition(all .2s ease-in-out);
-  margin-bottom: 0;
+}
 
-  @media (min-width: $screen-md) {
-    padding: 190px 0 100px;
+.navbar-toggle {
+  background-color: $white;
+  display: block;
+  border-radius: 50%;
+  @include square(40px);
+  @include transition(all .2s ease-in-out);
+  @include box-shadow(0px 0px 10px 0px rgba(0,0,0,0.75));
+  z-index: 6;
+
+  .icon-bar {
+    @include size(18px, 2px);
+    @include transition(all .2s ease-in-out);
+
+    &.icon-bar-top { }
+
+    &.icon-bar-middle { }
+
+    &.icon-bar-bottom { }
   }
 
-  a {
-    color: #fff;
+  &:hover,
+  &:focus {
+    outline: 0;
+  }
 
-    &:hover,
-    &:focus {
-      color: $gray-darker;
+  &:hover {
+    background-color: $banana;
+  }
+
+  &.close-nav {
+    background-color: transparent;
+
+    &:hover {
+      background-color: $mustard;
     }
-  }
 
-  &.hero-home,
-  &.hero-error {
-    background-position: center center;
-    background-size: cover;
-  }
+    .icon-bar {
+      position: absolute;
 
-  &.hero-home {
-    background-image: url(../images/hero/home.png);
-  }
+      &.icon-bar-top {
+        top: 18px;
+        transform: translateY(0) rotate(45deg);
+      }
 
-  &.hero-error {
-    background-image: url(../images/hero/error.png);
+      &.icon-bar-middle {
+        background-color: transparent;
+      }
+
+      &.icon-bar-bottom {
+        bottom: 18px;
+        transform: translateY(0) rotate(-45deg);
+      }
+    }
   }
 }

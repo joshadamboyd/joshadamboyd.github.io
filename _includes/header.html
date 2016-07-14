@@ -1,7 +1,43 @@
 <header id="header" role="navigation">
-  <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}" title="{{ site.title }}">
-    <img src="{{ "/images/logo/logo.png" | prepend: site.baseurl }}" alt="{{ site.title }}" title="{{ site.title }}">
-  </a>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle navbar-toggle-always collapsed hamburger-trigger" data-toggle="collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
 
-  {% include menu.html %}
+          <span class="icon-bar icon-bar-top"></span>
+          <span class="icon-bar icon-bar-middle"></span>
+          <span class="icon-bar icon-bar-bottom"></span>
+        </button>
+
+        <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}" title="{{ site.title }}">
+          <img src="{{ "/images/logo/logo.png" | prepend: site.baseurl }}" alt="{{ site.title }}" title="{{ site.title }}">
+        </a>
+      </div>
+
+      <div id="menu">
+        <ul class="hamburger-menu">
+          <li class="logo"><a href="{{ "/" | prepend: site.baseurl }}"><img src="{{ "/images/logo/logo.png" | prepend: site.baseurl }}" alt="{{ site.title }}" title="{{ site.title }}"></a></li>
+          {% if site.posts.size > 0 %}
+            <li class="section"><span>Blog</span></li>
+          {% endif %}
+          {% for post in site.posts limit:3 %}
+            <li><a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" {% if page.url == post.url %}class="active"{% endif %}>{{ post.title }}</a></li>
+          {% endfor %}
+          <li class="section"><span>About</span></li>
+          <li><a href="{{ "/about" | prepend: site.baseurl }}" title="Me" {% if page.url == "/about/" %}class="active"{% endif %}>Me</a></li>
+          <li><a href="{{ "/about/family" | prepend: site.baseurl }}" title="The Family" {% if page.url == "/about/family/" %}class="active"{% endif %}>The Family</a></li>
+          <li><a href="{{ "/about/stuff" | prepend: site.baseurl }}" title="The Stuff" {% if page.url == "/about/stuff/" %}class="active"{% endif %}>The Stuff</a></li>
+        </ul>
+
+        <div class="cd-overlay-nav">
+          <span></span>
+        </div>
+
+        <div class="cd-overlay-content">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
 </header>
