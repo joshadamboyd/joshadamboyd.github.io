@@ -70,11 +70,7 @@ ul.hamburger-menu {
     -moz-osx-font-smoothing: grayscale;
     @include transition(color 0.2s);
     color: $gray-base;
-    font-size: 125%;
-
-    @media (min-width: $screen-sm) {
-      font-size: 150%;
-    }
+    font-size: 150%;
 
     @media (min-width: $screen-md) {
       font-size: 175%;
