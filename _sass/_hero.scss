@@ -1,14 +1,18 @@
 /* HERO
 -------------------------------------------------- */
 .jumbo-header {
-  margin-top: 75px;
+  margin-top: 65px;
   text-align: center;
   padding: 150px 0;
   @include transition(all .2s ease-in-out);
   margin-bottom: 0;
 
-  @media (min-width: $screen-md) {
-    padding: 190px 0 100px;
+  @media (max-width: $screen-md) {
+    padding: 50px 0 100px;
+  }
+
+  @media (max-width: $screen-lg) {
+    padding: 100px 0 100px;
   }
 
   a {
