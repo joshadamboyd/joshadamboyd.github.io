@@ -1,8 +1,9 @@
 /* HERO
 -------------------------------------------------- */
 .jumbo-header {
+  margin-top: 75px;
   text-align: center;
-  padding: 120px 0 30px;
+  padding: 150px 0;
   @include transition(all .2s ease-in-out);
   margin-bottom: 0;
 
