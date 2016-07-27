@@ -27,12 +27,9 @@
           {% endfor %}
 
           <li class="section"><span>About</span></li>
-          <li><a href="{{ "/about" | prepend: site.baseurl }}" title="Me" {% if page.url == "/about/" %}class="active"{% endif %}>Me</a></li>
-          <li><a href="{{ "/about/family" | prepend: site.baseurl }}" title="The Family" {% if page.url == "/about/family/" %}class="active"{% endif %}>The Family</a></li>
-          <li><a href="{{ "/about/stuff" | prepend: site.baseurl }}" title="The Stuff" {% if page.url == "/about/stuff/" %}class="active"{% endif %}>The Stuff</a></li>
-
-          <li class="section"><span>Contact</span></li>
-          <li><a href="{{ "/contact" | prepend: site.baseurl }}" title="Contact" {% if page.url == "/contact/" %}class="active"{% endif %}>Contact</a></li>
+          <li><a href="{{ "/me" | prepend: site.baseurl }}" title="Me" {% if page.url == "/me/" %}class="active"{% endif %}>Me</a></li>
+          <li><a href="{{ "/family" | prepend: site.baseurl }}" title="The Family" {% if page.url == "/family/" %}class="active"{% endif %}>The Family</a></li>
+          <li><a href="{{ "/stuff" | prepend: site.baseurl }}" title="The Stuff" {% if page.url == "/stuff/" %}class="active"{% endif %}>The Stuff</a></li>
         </ul>
 
         <div class="cd-overlay-nav">

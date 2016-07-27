@@ -1,0 +1,5 @@
+<ul class="nav nav-tabs nav-justified nav-underline">
+  <li role="presentation"{% if include.active == "me" %} class="active"{% endif %}><a href="{{ "/me" | prepend: site.baseurl }}">Me</a></li>
+  <li role="presentation"{% if include.active == "family" %} class="active"{% endif %}><a href="{{ "/family" | prepend: site.baseurl }}">The Family</a></li>
+  <li role="presentation"{% if include.active == "stuff" %} class="active"{% endif %}><a href="{{ "/stuff" | prepend: site.baseurl }}">The Stuff</a></li>
+</ul>

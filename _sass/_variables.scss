@@ -24,6 +24,8 @@ $twitter:    #00aced !default;
 
 $font-family-pt-serif:  "PT Serif", Georgia, "Times New Roman", Times, serif !default;
 
+$padding: 15px !default;
+
 
 //== Colors
 //
@@ -239,7 +241,7 @@ $input-height-large:             (ceil($font-size-large * $line-height-large) + 
 $input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
 
 //** `.form-group` margin
-$form-group-margin-bottom:       15px !default;
+$form-group-margin-bottom:       $padding !default;
 
 $legend-color:                   $gray-dark !default;
 $legend-border-color:            #e5e5e5 !default;
@@ -445,7 +447,7 @@ $navbar-inverse-toggle-border-color:        transparent !default;
 //##
 
 //=== Shared nav styles
-$nav-link-padding:                          10px 15px !default;
+$nav-link-padding:                          10px $padding !default;
 $nav-link-hover-bg:                         $gray-lighter !default;
 
 $nav-disabled-link-color:                   $gray-light !default;
@@ -496,7 +498,7 @@ $pagination-disabled-border:           transparent !default;
 
 $pager-bg:                             $pagination-bg !default;
 $pager-border:                         $pagination-border !default;
-$pager-border-radius:                  15px !default;
+$pager-border-radius:                  $padding !default;
 
 $pager-hover-bg:                       $pagination-hover-bg !default;
 
@@ -614,10 +616,10 @@ $label-link-hover-color:      $white !default;
 //##
 
 //** Padding applied to the modal body
-$modal-inner-padding:         15px !default;
+$modal-inner-padding:         $padding !default;
 
 //** Padding applied to the modal title
-$modal-title-padding:         15px !default;
+$modal-title-padding:         $padding !default;
 //** Modal title line-height
 $modal-title-line-height:     $line-height-base !default;
 
@@ -646,7 +648,7 @@ $modal-sm:                    300px !default;
 //
 //## Define alert colors, border radius, and padding.
 
-$alert-padding:               15px !default;
+$alert-padding:               $padding !default;
 $alert-border-radius:         $border-radius-base !default;
 $alert-link-font-weight:      bold !default;
 
@@ -729,8 +731,8 @@ $list-group-link-heading-color: $headings-color !default;
 //##
 
 $panel-bg:                    $white !default;
-$panel-body-padding:          15px !default;
-$panel-heading-padding:       10px 15px !default;
+$panel-body-padding:          $padding !default;
+$panel-heading-padding:       10px $padding !default;
 $panel-footer-padding:        $panel-heading-padding !default;
 $panel-border-radius:         $border-radius-base !default;
 
@@ -814,7 +816,7 @@ $badge-border-radius:         10px !default;
 //##
 
 $breadcrumb-padding-vertical:   8px !default;
-$breadcrumb-padding-horizontal: 15px !default;
+$breadcrumb-padding-horizontal: $padding !default;
 //** Breadcrumb background color
 $breadcrumb-bg:                 $gray-lighter !default;
 //** Breadcrumb text color

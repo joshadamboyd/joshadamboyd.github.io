@@ -15,3 +15,107 @@ hr {
   display: none;
   border-bottom: 0 none;
 }
+
+.nav-underline {
+  > li {
+    float: left;
+
+    > a {
+      background-color: inherit !important;
+      border-radius: 0 !important;
+      border: 0 !important;
+      color: inherit;
+      @include transition(all .2s ease-in-out);
+
+      &:hover,
+      &:focus {
+        @include box-shadow(inset 0px -3px 0px 0px $gray-darker);
+      }
+    }
+
+    + li {
+      margin-left: 2px;
+    }
+
+    &.active > a {
+      color: inherit;
+
+      &,
+      &:hover,
+      &:focus {
+        @include box-shadow(inset 0px -3px 0px 0px $gray-darker);
+      }
+    }
+  }
+}
+
+.row {
+  &.row-no-padding {
+    .col-md-6 {
+      &:first-child {
+        padding-left: 0 !important;
+      }
+
+      &:last-child {
+        padding-right: 0 !important;
+      }
+
+      &.col-md-push-6 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      &.with-padding {
+        padding-left: $padding !important;
+        padding-right: $padding !important;
+      }
+    }
+  }
+
+  &.display-table {
+    display: table;
+    height: 100%;
+
+     &.background-gray {
+       background-color: $gray-lighter;
+     }
+
+    .display-cell {
+      display: table-cell;
+      float: none;
+
+      &.vertical-align {
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.family {
+  font-weight: bold;
+
+  &.family-sawyer { }
+
+  &.family-tucker { }
+
+  &.family-hudson { }
+}
+
+
+.about-title {
+  font-family: 'Lily Script One';
+  font-size: 200%;
+  text-align: center;
+
+  &.about-title-earlies { }
+
+  &.about-title-college { }
+
+  &.about-title-twenties { }
+
+  &.about-title-boys { }
+
+  &.about-title-ronna { }
+
+  &.about-title-dogs { }
+}
