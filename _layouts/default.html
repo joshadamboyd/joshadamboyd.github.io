@@ -10,6 +10,13 @@
 
       {% include hero.html %}
 
+      {% if page.subnav.section %}
+        {% assign section = page.subnav.section | prepend: "navigation/" | append: ".html" %}
+        {% assign active = page.subnav.active %}
+
+        {% include {{ section }} active=active %}
+      {% endif %}
+
       <main id="content" class="container">
         {{ content }}
       </main>
