@@ -59,22 +59,27 @@ hr {
 .row {
   &.row-no-padding {
     .col-md-6 {
-      &:first-child {
-        padding-left: 0 !important;
-      }
-
-      &:last-child {
-        padding-right: 0 !important;
-      }
+      padding-left: 0 !important;
+      padding-right: 0 !important;
 
       &.col-md-push-6 {
         padding-left: 0 !important;
         padding-right: 0 !important;
       }
 
+      &:first-child { }
+
+      &:last-child { }
+
       &.with-padding {
-        padding-left: $padding !important;
-        padding-right: $padding !important;
+        > p {
+          padding-left: $padding !important;
+          padding-right: $padding !important;
+        }
+      }
+
+      img {
+        margin: 0 auto;
       }
     }
   }
@@ -88,8 +93,10 @@ hr {
      }
 
     .display-cell {
-      display: table-cell;
-      float: none;
+      @media (min-width: $screen-md) {
+        display: table-cell;
+        float: none;
+      }
 
       &.vertical-align {
         vertical-align: middle;
