@@ -31,10 +31,12 @@ article {
   }
 
   .blog {
+    font-family: $font-family-sans-serif;
     margin-top: 15px;
   }
 
   .post-header {
+    font-family: $font-family-sans-serif;
     color: $gray;
 
     a {

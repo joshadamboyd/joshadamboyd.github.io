@@ -1,10 +1,10 @@
 /* FOOTER
 -------------------------------------------------- */
 #footer {
-  @include box-shadow(inset 0px 5px 10px -6px rgba(0,0,0,.75));
   background-color: $gray-lighter;
   padding: 50px 0;
   color: $gray-darker;
+  @include box-shadow(inset 0px 5px 10px -6px rgba(0,0,0,.75));
 
   .column-email {
     @media (min-width: $screen-sm) {

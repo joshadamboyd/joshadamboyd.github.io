@@ -16,7 +16,13 @@ hr {
   border-bottom: 0 none;
 }
 
+.pager,
+.pagination {
+  font-family: $font-family-sans-serif;
+}
+
 .nav-underline {
+  font-family: $font-family-sans-serif;
   padding-top: ($padding * 2);
   margin-bottom: ($padding * 2);
 
