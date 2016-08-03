@@ -1,13 +1,6 @@
 ---
 ---
 
-# Resize logo on scroll
-$(window).scroll ->
-  scrolled = $(document).scrollTop() > 200
-  $('.navbar-brand').toggleClass('smaller', scrolled)
-  return
-
-
 # Menu
 overlayNav = $('.cd-overlay-nav')
 overlayContent = $('.cd-overlay-content')

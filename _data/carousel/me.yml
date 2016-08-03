@@ -1,0 +1,10 @@
+- title: This is the first item
+  image: /images/carousel/me/jeep-image.png
+
+- title: This is the second item
+  image: /images/carousel/me/jeep-image.png
+
+- title: A title is not required either
+  image: /images/carousel/me/jeep-image.png
+
+- image: /images/carousel/me/jeep-image.png
