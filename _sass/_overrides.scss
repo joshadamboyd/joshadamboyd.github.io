@@ -87,8 +87,8 @@ hr {
 
       &.with-padding {
         > p {
-          padding-left: $padding !important;
-          padding-right: $padding !important;
+          padding-left: ($padding + 20px) !important;;
+          padding-right: ($padding + 20px) !important;;
         }
       }
 
