@@ -1,20 +1,9 @@
 ---
 layout: null
+sitemap: false
 ---
 
-{{ site.title }} - {{ "/" | prepend: site.baseurl | prepend: site.url }}
-
-/* TEAM */
-
-Name:     Josh Boyd
-Site:     http://joshadamboyd.com
-Twitter:  @joshadamboyd
-Location: McKinney, TX
-
-Name:     David Freerksen
-Site:     http://davidfreerksen.com
-Twitter:  @dfreerksen
-Location: Elk Grove, CA
+{{ site.title }} - {{ '/' | prepend: absolute_url }}
 
 /* SITE */
 
@@ -22,5 +11,5 @@ Last update: {{ site.time | date_to_rfc822 }}
 Doctype:     HTML5
 Language:    English
 Standards:   HTML5, CSS3
-Components:  Bootstrap, jQuery, Font Awesome
-Software:    VIM, Atom
+Components:  Bootstrap, jQuery
+Software:    Atom

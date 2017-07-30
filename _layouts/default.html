@@ -1,29 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-  {% include head.html %}
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  {% include layout/head.html %}
   <body>
-    <div id="wrap">
-      {% include noscript.html %}
-      {% include iealert.html %}
 
-      {% include header.html %}
+    {% include layout/iealert.html %}
+    {% include layout/noscript.html %}
 
-      {% include hero.html %}
+    {% include layout/header.html %}
 
-      {% if page.subnav.section %}
-        {% assign section = page.subnav.section | prepend: "navigation/" | append: ".html" %}
-        {% assign active = page.subnav.active %}
+    <div class="container">
+      {{ content }}
 
-        {% include {{ section }} active=active %}
-      {% endif %}
-
-      <main id="content" class="container">
-        {{ content }}
-      </main>
-
-      {% include footer.html %}
-
-      {% include foot.html %}
+      {% include layout/footer.html %}
     </div>
+
+    {% include layout/foot.html %}
   </body>
 </html>

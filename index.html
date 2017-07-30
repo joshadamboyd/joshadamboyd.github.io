@@ -1,46 +1,27 @@
 ---
-layout: default
-type: list
-hero:
-  section: home
+title: Home
 ---
 
-<div class="page-header">
-  <h1>Posts</h1>
-</div>
+{% for post in site.posts limit:1 %}
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h2 class="post-title" itemprop="name headline">{{ post.title | escape }}</h2>
 
-<div id="pagination-top">
-  {% include pagination.html %}
-</div>
+      <p class="post-meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+          {{ post.date | date: "%b %-d, %Y" }}
+        </time>
+      </p>
+    </header>
 
-{% if paginator.posts %}
-  <div class="articles">
-    {% for post in paginator.posts %}
-      <article class="post post-excerpt clearfix" itemscope itemtype="http://schema.org/BlogPosting">
-        <div class="post-body col-md-10 col-md-offset-1">
-          <div class="post-header" itemprop="name headline">
-            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-          </div>
+    <div class="post-content" itemprop="articleBody">
+      {{ post.content }}
+    </div>
 
-          <div class="date">
-            <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
-          </div>
-
-          <div class="content" itemprop="articleBody">
-            {{ post.excerpt}}
-          </div>
-
-          <p class="post-more">
-            <a href="{{ post.url | prepend: site.baseurl }}">Read More</a>
-          </p>
-        </div>
-      </article>
-    {% endfor %}
-  </div>
-{% else %}
-  <p>No posts found.</p>
-{% endif %}
-
-<div id="pagination-bottom">
-  {% include pagination.html %}
-</div>
+    {% if jekyll.environment == "production" %}
+      <div class="post-footer" itemprop="articleBody">
+        {% include comments/disqus.html %}
+      </div>
+    {% endif %}
+  </article>
+{% endfor %}

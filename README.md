@@ -1,34 +1,67 @@
-# JoshAdamboyd
+# JoshAdamBoyd
 
-JoshAdamBoyd.com using Bookstrap + Jekyll.
+Website of [JoshAdamBoyd.com](http://joshadamboyd.com)
 
-#### Jekyll
+## Installation
 
-Required gems:
+### Jekyll
 
-```
-gem install jekyll
-gem install jekyll-sitemap
-gem install jekyll-paginate
-gem install jekyll-coffeescript
-```
-
-To build the site, run:
+Install gems
 
 ```
-jekyll build
+$ bundle install
 ```
 
-To build the site but also watch for file changes, run:
+### Yarn/NPM
+
+Install packages
 
 ```
-jekyll serve
+$ yarn
 ```
 
 or
 
 ```
-jekyll s
+$ npm install
+```
+
+## Assets
+
+Compile assets
+
+```
+$ gulp
+```
+
+or
+
+```
+$ gulp build
+```
+
+Build and watch for changes
+
+```
+$ gulp watch
+```
+
+## Running
+
+Start the Jekyll server
+
+```
+$ jekyll serve
+```
+
+or
+
+```
+$ jekyll s
 ```
 
 This will start a Rake server to allow you to view the site in the browser by going to [http://localhost:4000/](http://localhost:4000/)
+
+## Testing
+
+TODO

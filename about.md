@@ -1,0 +1,18 @@
+---
+title: About Me
+permalink: /about/
+---
+
+### Hello, my name is Josh Boyd. I’m a husband and father living in McKiney, Texas. I’m also a veteran, rookie bbq cook, and internal combustion enthusiast.
+
+I'm currently a Senior UX Designer at projekt202 where I've worked with various clients on Enterprise level projects. I'm well versed in Agile methodology and user centered design and have a lot of experience communicating with the various members of a delivery team as well as stakeholders.
+
+I've done freelance work in the past varying from illustrations to publication design. I enjoy identity system design as well as package design and excel at illustration.
+
+## Brands I’ve worked with...
+
+### American Airlines, Southwest Airlines, Examsoft, JCPenny, Pizza Hut
+
+## Get in touch.
+
+{% include contact.html %}

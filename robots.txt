@@ -1,7 +1,9 @@
 ---
 layout: null
+sitemap: false
 ---
+
 User-Agent: *
 Disallow:
 
-Sitemap: {{ "/sitemap.xml" | prepend: site.baseurl | prepend: site.url }}
+Sitemap: {{ "/sitemap.xml" | prepend: absolute_url }}

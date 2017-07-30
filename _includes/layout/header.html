@@ -1,0 +1,36 @@
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+        <span class="sr-only">Menu</span>
+
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="{{ '/articles' | prepend: relative_url }}" id="articles">Articles <span class="caret"></span></a>
+
+          <ul class="dropdown-menu" aria-labelledby="articles">
+            <li><a href="{{ '/articles' | prepend: relative_url }}" {% if page.url == '/articles' %}class="active"{% endif %}>View All</a></li>
+
+            <li class="divider"></li>
+
+            {% for post in site.posts limit: 3 %}
+              <li><a href="{{ post.url | prepend: relative_url }}" {% if page.url == post.url %}class="active"{% endif %}>{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+        <li>
+          <a href="{{ '/about' | prepend: relative_url }}">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

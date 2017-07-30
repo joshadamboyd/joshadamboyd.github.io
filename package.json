@@ -1,0 +1,43 @@
+{
+  "name": "joshadamboyd",
+  "private": true,
+  "version": "1.0.0",
+  "author": "Josh Boyd <joshadamboyd@gmail.com>",
+  "homepage": "https://github.com/joshadamboyd/joshadamboyd.github.io",
+  "description": "JAB",
+  "keywords": [
+    "josh",
+    "boyd"
+  ],
+  "license": "MIT",
+  "main": "gulpfile.js",
+  "engines": {
+    "npm": ">=5.0"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshadamboyd/joshadamboyd.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joshadamboyd/joshadamboyd.github.io/issues"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "jshint": "^2.9.5"
+  }
+}

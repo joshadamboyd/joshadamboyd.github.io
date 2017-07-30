@@ -1,43 +1,25 @@
 ---
-layout: default
+layout: page
 ---
 
-{% assign author = site.data.authors[page.author] %}
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h2 class="post-title">{{ page.title | escape }}</h2>
 
-<div class="articles">
-  <article class="post post-full clearfix" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="post-body col-md-10 col-md-offset-1">
-      <div class="blog">
-        <a href="{{ "/" | prepend: site.baseurl }}" title="Blog"><span aria-hidden="true" class="caret-left">&larr;</span> Back to Blog</a>
-      </div>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%b %-d, %Y" }}
+      </time>
+    </p>
+  </header>
 
-      <div class="post-header" itemprop="name headline">
-        <h2>{{ page.title }}</h2>
-      </div>
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
 
-      <div class="date">
-        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-      </div>
-
-      {% if page.author_profile && author %}
-      <div class="meta">
-        <span class="author">
-          Written by <a href="{{ author.web }}">{{ author.name }}</a>
-        </span>
-      </div>
-      {% endif %}
-
-      <div class="content" itemprop="articleBody">
-        {{ content }}
-      </div>
-
-      {% include shared/share.html %}
-
-      <div id="pagination-bottom">
-        {% include posts/pager.html %}
-      </div>
-
-      {% include posts/comments.html %}
+  {% if jekyll.environment == "production" %}
+    <div class="post-footer" itemprop="articleBody">
+      {% include comments/disqus.html %}
     </div>
-  </article>
-</div>
+  {% endif %}
+</article>

@@ -1,0 +1,37 @@
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}" >
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" >
+<meta property="og:url" content="{{ page.url | replace: 'index.html','' | prepend: absolute_url }}">
+<meta property="og:type" content="{% if page.article %}article{% else %}website{% endif %}">
+<meta property="og:image" content="{{ '/icons/social/facebook.png' | prepend: absolute_url }}">
+
+{% if site.social.facebook %}
+<meta property="article:author" content="https://www.facebook.com/{{ site.social.facebook }}">
+{% endif %}
+
+{% if "post" == page.type %}
+<meta itemscope="name" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta itemscope="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta itemscope="image" content="{{ '/icons/social/schema.png' | prepend: absolute_url }}">
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.title }}",
+  "headline": "{{ page.title }}",
+  "description": "{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+  "url": "{{ page.url | replace: 'index.html','' | prepend: absolute_url }}"
+}
+</script>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="{{ page.url | replace: 'index.html','' | prepend: absolute_url }}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:site" content="@{{ site.social.twitter }}">
+<meta name="twitter:creator" content="@{{ site.social.twitter }}">
+<meta name="twitter:image:src" content="{{ '/icons/social/twitter.png' | prepend: absolute_url }}">
+<meta name="twitter:image:width" content="120">
+<meta name="twitter:image:height" content="120">

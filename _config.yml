@@ -1,130 +1,103 @@
+# Encoding
+encoding: utf-8
+
 # Site
-title: JoshAdamBoyd # Name of your site
-email: joshadamboyd@mac.com # Your email address
-description: This is the personal website of Josh Adam Boyd. I'm a UX Designer for projekt202 living in McKinney Texas. # Default description of your site
-keywords: # Site keywords
-  - UX
-  - Designer
+title: JoshAdamBoyd
+email: joshadamboyd@mac.com
+description: This is the personal website of Josh Adam Boyd. I'm a UX Designer for projekt202 living in McKinney Texas.
+keywords:
+  - UX Designer
   - Illustrator
   - Blog
   - Josh Adam Boyd
   - Josh Boyd
   - JoshAdamBoyd
+  - Portfolio
+  - Graphic Designer
+  - McKinney TX
 
+# URLs
+baseurl: ""
+url: https://joshadamboyd.github.io
 
-# URLs and paths
-baseurl: "" # Base path of your site. Useful when your Jekyll site is at /blog
-url: http://joshadamboyd.github.io # Base URL of your site
+# Comments
+comments:
+  disqus:
 
-# Social networks
-social: # Social media usernames
+# Analytics
+analytics:
+  google: UA-5762082-1
+
+# Social media
+social:
   dribbble: joshadamboyd
   facebook:
   github:
   instagram: joshadamboyd
   linkedin:
   twitter: joshadamboyd
+  youtube: joshadamboyd
 
-# Comments
-comments:
-  provider: disqus # Comments provider. Only one can be used
-  disqus:
-    short_name: joshadamboyd
-  facebook:
-    app_id:
-    num_posts: 5
-    width: 100%
-    colorscheme: light
-
-# Analytics
-analytics: # Site analytics. Multiple can be used at the same time
-  google:
-    tracking_id: UA-5762082-1
-  mixpanel:
-    token:
-
-# Site verification
-verification:
-  google:
-  msvalidate:
+# Markdown
+markdown: kramdown
 
 # Pagination
-paginate: 12 # Number of posts to display per page
-permalink: /:year/:month/:title/ # Post URL format
-paginate_path: /page/:num # Post pagination URL format
+paginate: 12
+permalink: articles/:title/
+paginate_path: articles/page/:num/
 
 # Timezone
-timezone: America/Chicago # Your timezone
+timezone: America/Chicago
 
 # Collections
 collections:
-  timeline:
-    output: false
   portfolio:
-    output: true
+    output: false
 
-# Share
-share:
-  email: false
-  facebook: true
-  linkedin: true
-  twitter: true
-  google: true
-  pinterest: false
-
-# Default layouts
+# Defaults
 defaults:
-  - scope:
+  # Portfolio
+  -
+    scope:
       type: portfolio
     values:
       type: portfolio
-      layout: portfolio
-      share: false
-      hero:
-        section: page
-        title: Josh Adam Boyd
-        subtitle: Sr UX Designer, Husband, and Dad
-  - scope:
+      layout: page
+  # Posts
+  -
+    scope:
       type: posts
     values:
       type: post
       layout: post
-      author_profile: true
-      author: joshadamboyd
       comments: true
-      share: false
-      hero:
-        section: post
-        title: Josh Adam Boyd
-        subtitle: Sr UX Designer, Husband, and Dad
-  - scope:
+  # Pages
+  -
+    scope:
       type: pages
     values:
       type: page
       layout: page
-      share: false
-      hero:
-        section: page
-        title: Josh Adam Boyd
-        subtitle: Sr UX Designer, Husband, and Dad
 
 # CSS compression
 sass:
-  # style: expanded
   style: :compressed
+  # style: :expanded
 
 # Plugins
-gems:
-  - jekyll-sitemap
+plugins:
+  - jekyll-feed
   - jekyll-paginate
-  - jekyll-coffeescript
+  - jekyll-sitemap
 
 # Exclude in build
 exclude:
+  - bin/
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - node_modules/
+  - package.json
+  - package-lock.json
   - README.md
-
-# Highlighter
-highlighter: rouge
-
-# Excpert
-excerpt_separator: <!--more-->
+  - yarn.lock
