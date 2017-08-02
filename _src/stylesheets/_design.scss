@@ -1,30 +1,38 @@
-// Cosmo 3.3.7
-// Bootswatch
-// -----------------------------------------------------
+html {
+  min-height: 100%;
+}
 
-$web-font-path: "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" !default;
-@import url($web-font-path);
+body {
+  background-image: linear-gradient($background-gradient-angle, $background-gradient-dark, $background-gradient-light);
+  font-smooth: antialiased;
+}
+
+/**
 
 // Navbar =====================================================================
 
 .navbar {
-
   &-inverse {
-
     .badge {
-      background-color: #fff;
+      background-color: $white;
       color: $brand-primary;
     }
   }
 }
+**/
 
 // Buttons ====================================================================
 
-// Typography =================================================================
-
-body {
-  -webkit-font-smoothing: antialiased;
+.btn {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .35);
+  font-weight: 500;
+  padding: 10px 18px 7px;
+  text-transform: uppercase;
 }
+
+
+/**
+// Typography =================================================================
 
 .text-primary,
 .text-primary:hover {
@@ -51,11 +59,11 @@ body {
   color: $brand-info;
 }
 
+
 // Tables =====================================================================
 
 table,
 .table {
-
   a:not(.btn) {
     text-decoration: underline;
   }
@@ -68,16 +76,16 @@ table,
   .warning,
   .danger,
   .info {
-    color: #fff;
+    color: $white;
 
     a {
-      color: #fff;
+      color: $white;
     }
   }
 }
 
-// Forms ======================================================================
 
+// Forms ======================================================================
 
 .has-warning {
   .help-block,
@@ -145,29 +153,29 @@ table,
   }
 }
 
+
 // Navs =======================================================================
 
 .nav-pills {
-
   & > li > a {
     border-radius: 0;
   }
 }
 
 .dropdown-menu {
-
   & > li > a:hover,
   & > li > a:focus {
     background-image: none;
   }
 }
 
+
 // Indicators =================================================================
 
 .close {
+  opacity: .4;
   text-decoration: none;
   text-shadow: none;
-  opacity: 0.4;
 
   &:hover,
   &:focus {
@@ -176,11 +184,11 @@ table,
 }
 
 .alert {
-  border: none;
+  border: 0;
 
   .alert-link {
+    color: $white;
     text-decoration: underline;
-    color: #fff;
   }
 }
 
@@ -188,24 +196,27 @@ table,
   border-radius: 0;
 }
 
+
 // Progress bars ==============================================================
 
 .progress {
-  height: 8px;
   @include box-shadow(none);
+  height: 8px;
+
   .progress-bar {
     font-size: 8px;
     line-height: 8px;
   }
 }
 
+
 // Containers =================================================================
 
 .panel {
   &-heading,
   &-footer {
-    border-top-right-radius: 0;
     border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   &-default {
@@ -259,4 +270,22 @@ a.list-group-item {
 
 .popover {
   color: $text-color;
+}
+**/
+
+.page-header {
+  border: 0;
+  text-align: center;
+}
+
+time {
+  color: $gray-lighter;
+}
+
+article {
+  border-bottom: 1px solid $gray-lighter;
+
+  &:last-child {
+    border: 0;
+  }
 }

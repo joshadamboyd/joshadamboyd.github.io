@@ -1,7 +1,8 @@
 @import 'variables';
 
-$web-font-path: 'https://fonts.googleapis.com/css?family=Rubik:400,900' !default;
-@import url($web-font-path);
+$font-rubik: 'https://fonts.googleapis.com/css?family=Rubik:400,500' !default;
+
+@import url($font-rubik);
 
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
