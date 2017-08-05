@@ -1,41 +1,45 @@
 <footer>
-  <div class="row">
-    <div class="col-lg-12">
-      <ul class="list-unstyled list-inline col-sm-6">
-        <li><a href="{{ '/' | prepend: relative_url }}">Home</a></li>
-        <li><a href="{{ '/articles' | prepend: relative_url }}">Articles</a></li>
-        <li><a href="{{ '/about' | prepend: relative_url }}">About</a></li>
-      </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-unstyled list-inline">
+          <li><a href="{{ '/' | prepend: relative_url }}">Home</a></li>
+          <li><a href="{{ '/articles' | prepend: relative_url }}">Articles</a></li>
+          <li><a href="{{ '/about' | prepend: relative_url }}">About</a></li>
+        </ul>
+      </div>
 
-      <ul class="list-unstyled list-inline text-right col-sm-6">
-        {% if site.social.instagram %}
-        <li><a class="instagram" href="http://instagram.com/{{ site.social.instagram }}" title="Like me on Instagram">Instagram</a></li>
-        {% endif %}
+      <div class="col-md-6">
+        <ul class="list-unstyled list-inline text-right">
+          {% if site.social.instagram %}
+          <li><a class="instagram" href="http://instagram.com/{{ site.social.instagram }}" title="Like me on Instagram">Instagram</a></li>
+          {% endif %}
 
-        {% if site.social.dribbble %}
-        <li><a class="dribbble" href="https://dribbble.com/{{ site.social.dribbble }}" title="Like me on Dribbble">Dribbble</a></li>
-        {% endif %}
+          {% if site.social.dribbble %}
+          <li><a class="dribbble" href="https://dribbble.com/{{ site.social.dribbble }}" title="Like me on Dribbble">Dribbble</a></li>
+          {% endif %}
 
-        {% if site.social.twitter %}
-        <li><a class="twitter" href="https://twitter.com/{{ site.social.twitter }}" title="Follow me on Twitter">Twitter</a></li>
-        {% endif %}
+          {% if site.social.twitter %}
+          <li><a class="twitter" href="https://twitter.com/{{ site.social.twitter }}" title="Follow me on Twitter">Twitter</a></li>
+          {% endif %}
 
-        {% if site.social.facebook %}
-        <li><a class="facebook" href="https://facebook.com/{{ site.social.facebook }}" title="Like me on Facebook">Facebook</a></li>
-        {% endif %}
+          {% if site.social.facebook %}
+          <li><a class="facebook" href="https://facebook.com/{{ site.social.facebook }}" title="Like me on Facebook">Facebook</a></li>
+          {% endif %}
 
-        {% if site.social.youtube %}
-        <li><a class="twitter" href="https://www.youtube.com/user/{{ site.social.youtube }}" title="View me on YouTube">YouTube</a></li>
-        {% endif %}
+          {% if site.social.youtube %}
+          <li><a class="twitter" href="https://www.youtube.com/user/{{ site.social.youtube }}" title="View me on YouTube">YouTube</a></li>
+          {% endif %}
 
-        {% if site.social.linkedin %}
-        <li><a class="linkedin" href="https://www.linkedin.com/in/{{ site.social.linkedin }}" title="Connect on Linkedin">Linkedin</a></li>
-        {% endif %}
+          {% if site.social.linkedin %}
+          <li><a class="linkedin" href="https://www.linkedin.com/in/{{ site.social.linkedin }}" title="Connect on Linkedin">Linkedin</a></li>
+          {% endif %}
 
-        {% if site.social.github %}
-        <li><a class="github" href="https://github.com/{{ site.social.github }}" title="Fork me on Github">Github</a></li>
-        {% endif %}
-      </ul>
+          {% if site.social.github %}
+          <li><a class="github" href="https://github.com/{{ site.social.github }}" title="Fork me on Github">Github</a></li>
+          {% endif %}
+        </ul>
+      </div>
     </div>
   </div>
 </footer>
