@@ -1,4 +1,4 @@
-$black:  #000 !default;
+$black:  #4a4a4a !default;
 $white:  #fff !default;
 $purple: #9012fe !default;
 
@@ -148,7 +148,7 @@ $table-border-color:            #ddd !default;
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-font-weight:                normal !default;
+$btn-font-weight:                500 !default;
 
 $btn-default-color:              $purple !default;
 $btn-default-bg:                 $white !default;
@@ -238,7 +238,7 @@ $cursor-disabled:                not-allowed !default;
 //## Dropdown menu container and contents.
 
 //** Background for the dropdown menu.
-$dropdown-bg:                    #fff !default;
+$dropdown-bg:                    $white !default;
 //** Dropdown menu `border-color`.
 $dropdown-border:                rgba(0, 0, 0, .15) !default;
 //** Dropdown menu `border-color` **for IE8**.
@@ -247,11 +247,11 @@ $dropdown-fallback-border:       #ccc !default;
 $dropdown-divider-bg:            #e5e5e5 !default;
 
 //** Dropdown link text color.
-$dropdown-link-color:            $gray-dark !default;
+$dropdown-link-color:            $purple !default;
 //** Hover color for dropdown links.
-$dropdown-link-hover-color:      #fff !default;
+$dropdown-link-hover-color:      $purple !default;
 //** Hover background for dropdown links.
-$dropdown-link-hover-bg:         $component-active-bg !default;
+$dropdown-link-hover-bg:         $gray-lighter !default;
 
 //** Active dropdown menu item text color.
 $dropdown-link-active-color:     #fff !default;
@@ -265,7 +265,7 @@ $dropdown-link-disabled-color:   $gray-light !default;
 $dropdown-header-color:          $gray-light !default;
 
 //** Deprecated `$dropdown-caret-color` as of v3.1.0
-$dropdown-caret-color:           #000 !default;
+$dropdown-caret-color:           $black !default;
 
 
 //-- Z-index master list
@@ -376,7 +376,7 @@ $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links
 $navbar-default-link-color:                $black !default;
-$navbar-default-link-hover-color:          $black !default;
+$navbar-default-link-hover-color:          $purple !default;
 $navbar-default-link-hover-bg:             darken($navbar-default-bg, 10%) !default;
 $navbar-default-link-active-color:         $navbar-default-link-hover-color !default;
 $navbar-default-link-active-bg:            $navbar-default-link-hover-bg !default;
@@ -384,13 +384,13 @@ $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
-$navbar-default-brand-color:               $navbar-default-link-color !default;
-$navbar-default-brand-hover-color:         #fff !default;
+$navbar-default-brand-color:               $black !default;
+$navbar-default-brand-hover-color:         $purple !default;
 $navbar-default-brand-hover-bg:            none !default;
 
 // Navbar toggle
-$navbar-default-toggle-hover-bg:           $navbar-default-link-hover-bg !default;
-$navbar-default-toggle-icon-bar-bg:        #fff !default;
+$navbar-default-toggle-hover-bg:           transparent !default;
+$navbar-default-toggle-icon-bar-bg:        $black !default;
 $navbar-default-toggle-border-color:       transparent !default;
 
 

@@ -1,0 +1,9 @@
+//
+// Dropdown menus
+// --------------------------------------------------
+
+.dropdown-menu {
+  @media (min-width: $screen-sm-min) {
+    text-align: right;
+  }
+}

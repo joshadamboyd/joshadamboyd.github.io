@@ -1,0 +1,11 @@
+//
+// Article
+// --------------------------------------------------
+
+article {
+  border-bottom: 1px solid $gray-lighter;
+
+  &:last-child {
+    border: 0;
+  }
+}

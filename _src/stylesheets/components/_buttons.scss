@@ -1,0 +1,9 @@
+//
+// Buttons
+// --------------------------------------------------
+
+.btn {
+  @include box-shadow(0 2px 4px 0 rgba($black, .35));
+  padding: 10px 18px 7px;
+  text-transform: uppercase;
+}

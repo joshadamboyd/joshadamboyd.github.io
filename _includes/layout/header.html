@@ -15,12 +15,10 @@
     <div class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="{{ '/articles' | prepend: relative_url }}" id="articles">Articles <span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="{{ '/articles' | prepend: relative_url }}" id="articles">Articles <span class="glyphicon glyphicon-chevron-down small"></span></a>
 
           <ul class="dropdown-menu" aria-labelledby="articles">
-            <li><a href="{{ '/articles' | prepend: relative_url }}" {% if page.url == '/articles' %}class="active"{% endif %}>View All</a></li>
-
-            <li class="divider"></li>
+            <li><a href="{{ '/articles' | prepend: relative_url }}" {% if page.url == '/articles' %}class="active"{% endif %}>View All  <span class="glyphicon glyphicon-chevron-right small"></span></a></li>
 
             {% for post in site.posts limit: 3 %}
               <li><a href="{{ post.url | prepend: relative_url }}" {% if page.url == post.url %}class="active"{% endif %}>{{ post.title }}</a></li>
