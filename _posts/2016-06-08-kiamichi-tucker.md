@@ -1,5 +1,5 @@
 ---
-title: "Kiamichi Tucker"
+title: Kiamichi Tucker
 date: 2016-06-06 10:15:00 -0500
 categories:
   - categoryA

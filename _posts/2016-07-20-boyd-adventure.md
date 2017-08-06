@@ -1,5 +1,5 @@
 ---
-title: "The Boyd Adventure 2016"
+title: The Boyd Adventure 2016
 date: 2016-06-06 10:15:00 -0500
 categories:
   - categoryA
