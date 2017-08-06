@@ -1,0 +1,22 @@
+---
+title: Portfolio
+permalink: /portfolio/
+---
+
+<ul class="nav nav-tabs" id="portfolioTabs">
+  {% for portfolio in site.portfolio %}
+    <li role="presentation"{% if forloop.first == true %} class="active"{% endif %}>
+      <a href="#{{ portfolio.title | slugify }}" aria-controls="{{ portfolio.title | slugify }}" role="tab" data-toggle="tab">
+        {{ portfolio.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+<div class="tab-content">
+  {% for portfolio in site.portfolio %}
+    <div role="tabpanel" class="tab-pane{% if forloop.first == true %} active{% endif %}" id="{{ portfolio.title | slugify }}">
+      {{ portfolio.content }}
+    </div>
+  {% endfor %}
+</div>

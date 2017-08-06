@@ -1,5 +1,12 @@
+'use strict';
+
 $(function() {
 
-  console.log('JoshAdamBoyd.com');
+  // Portfolio tabs
+  $('#portfolioTabs a').click(function (evt) {
+    evt.preventDefault();
+
+    $(this).tab('show');
+  });
 
 });
