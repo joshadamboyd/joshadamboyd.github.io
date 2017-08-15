@@ -64,4 +64,6 @@ This will start a Rake server to allow you to view the site in the browser by go
 
 ## Testing
 
-TODO
+```
+$ rake test
+```
