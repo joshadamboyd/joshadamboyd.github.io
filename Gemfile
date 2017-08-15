@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 3.5.1"
 
-group :development do
+group :development, :test do
   gem "html-proofer", "~> 3.7.2"
 end
 
