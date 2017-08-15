@@ -5,9 +5,23 @@
 body.home,
 body.portfolio,
 body.post {
+  background-color: $white;
+  background-image: none;
+  color: $gray-darker;
+
   .page-header {
     h1 {
       display: none;
+    }
+  }
+
+  time {
+    color: $gray-light;
+  }
+
+  .post-content {
+    p {
+      margin: 0 5% 10.5px;
     }
   }
 }
