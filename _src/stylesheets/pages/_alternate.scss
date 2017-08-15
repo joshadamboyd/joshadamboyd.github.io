@@ -1,0 +1,13 @@
+//
+// Alternate designed pages
+// --------------------------------------------------
+
+body.home,
+body.portfolio,
+body.post {
+  .page-header {
+    h1 {
+      display: none;
+    }
+  }
+}

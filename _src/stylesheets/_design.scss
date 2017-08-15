@@ -24,4 +24,17 @@
 @import "components/dropdowns";
 @import "components/forms";
 @import "components/navbar";
+@import "components/page-content";
 @import "components/page-header";
+
+
+//
+// Pages
+// --------------------------------------------------
+
+@import "pages/alternate";
+@import "pages/home";
+@import "pages/page";
+@import "pages/portfolio";
+@import "pages/post";
+@import "pages/posts";
